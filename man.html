@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,300,500,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="man.css">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <title>SportsWiki|Manchester United</title>
+    <link rel="shortcut icon" type="image/jpg" href="SportsWiki Logo - Shortcut.lnk"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning" id="mynav">
+        <a class="navbar-brand" href="#">
+            <img src="SportsWiki Logo - Shortcut.lnk" width="30" height="30" class="d-inline-block align-top" alt="" />
+            SportsWiki
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <div class="wrapper">
+                <div class="searchBar">
+                    <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Search" value="" />
+                    <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                        <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+                            <path fill="#666666"
+                                d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button">Settings</button>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                <a href="#" class="w3-bar-item w3-button">My Account</a>
+                <a href="#" class="w3-bar-item w3-button">Theme</a>
+                <a href="#" class="w3-bar-item w3-button">More Settings</a>
+            </div>
+        </div>
+    </nav>
+<br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="man.png" width="90px">
+            </div>
+            <div class="col-sm-4">
+                Team
+                <h2> <b>Manchester United </b></h2>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+<br>
+
+    <div class="navbar-container">
+        <ul>
+            <li class="nav-link">
+                <a href="man.html">Fixtures
+                </a>
+                <div class="underline"></div>
+            </li>
+            <li class="nav-link">
+                <a href="man.html">Results</a>
+                <div class="underline"></div>
+                <li class="nav-link">
+                    <a href="player.html">Players</a>
+                    <div class="underline"></div>
+        </ul>
+    </div>
+<h2>Season Schedule</h2><br>
+    <div class="query selctor"></div>
+    <select class="query-selector">
+        <option value=""> All competitions </option>
+        <option value="5"> Champions League </option>
+        <option value="140"> Club Friendly Games </option>
+        <option value="41"> EFL Cup </option>
+        <option value="17"> FA Cup </option>
+        <option value="90"> International Champions Cup </option>
+        <option value="9"> Premier League </option>
+        <!---->
+    </select>
+
+<br>
+<br>
+<div class="gridcontainer">
+    <div class="matchfixtures">
+      <div class="row">
+        <div class="col-sm-4">
+        <div class="card">
+          <div class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <img src="ligapo.png" width="20px">
+                </div>
+                <div class="col-sm-6">
+                    Manchester United
+                </div>
+                <div class="col">
+                    0
+                </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1">
+              <img src="ligapo.png" width="20px">
+          </div>
+          <div class="col-sm-6">
+              Manchester United
+          </div>
+          <div class="col">
+              1
+          </div>
+      </div>
+  </div>
+  </div>
+  </div>
+  </div>
+</div><br><br><br>
+<div class="matchfixtures">
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="card">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="ligapo.png" width="20px">
+            </div>
+            <div class="col-sm-6">
+                Manchester United
+            </div>
+            <div class="col">
+                0
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+          <img src="ligapo.png" width="20px">
+      </div>
+      <div class="col-sm-6">
+          Manchester United
+      </div>
+      <div class="col">
+          1
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div><br><br><br>
+<div class="matchfixtures">
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="card">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="ligapo.png" width="20px">
+            </div>
+            <div class="col-sm-6">
+                Manchester United
+            </div>
+            <div class="col">
+                0
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+          <img src="ligapo.png" width="20px">
+      </div>
+      <div class="col-sm-6">
+          Manchester United
+      </div>
+      <div class="col">
+          1
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div><br><br><br>
+<div class="matchfixtures">
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="card">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="ligapo.png" width="20px">
+            </div>
+            <div class="col-sm-6">
+                Manchester United
+            </div>
+            <div class="col">
+                0
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+          <img src="ligapo.png" width="20px">
+      </div>
+      <div class="col-sm-6">
+          Manchester United
+      </div>
+      <div class="col">
+          1
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div><br><br><br>
+<div class="matchfixtures">
+  <div class="row">
+    <div class="col-sm-4">
+    <div class="card">
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-1">
+                <img src="ligapo.png" width="20px">
+            </div>
+            <div class="col-sm-6">
+                Manchester United
+            </div>
+            <div class="col">
+                0
+            </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-1">
+          <img src="ligapo.png" width="20px">
+      </div>
+      <div class="col-sm-6">
+          Manchester United
+      </div>
+      <div class="col">
+          1
+      </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div><br><br><br>
+    <!-- Footer -->
+    <footer class="page-footer font-small stylish-color-dark pt-4 bg-info">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-4 mx-auto">
+                    <!-- Content -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">
+                        SOCCER WIKI
+                    </h5>
+                    <p>Enjoy your daily soccer stats and highlights.</p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none" />
+
+                <!-- Grid column -->
+                <div class="col-md-2 mx-auto">
+                    <!-- Links -->
+                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+
+        <hr />
+
+        <!-- Call to action -->
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h5 class="mb-1">Register for free</h5>
+            </li>
+            <li class="list-inline-item">
+                <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
+            </li>
+        </ul>
+        <!-- Call to action -->
+
+        <hr />
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fab fa-facebook-f"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fab fa-twitter"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fab fa-google-plus-g"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fab fa-linkedin-in"> </i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-dribbble mx-1">
+                    <i class="fab fa-dribbble"> </i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright Soccer Wiki.
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+</body>
+
+</html>
